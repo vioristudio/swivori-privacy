@@ -1,263 +1,252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Swivori Privacy Policy | Viori Studio</title>
-  <meta name="description" content="Privacy Policy for Swivori, an image prompt creator tool by Viori Studio." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swivori Privacy Policy</title>
   <style>
     :root {
-      --bg: #f7f0df;
-      --card: #fffaf0;
-      --card-soft: #fffdf8;
-      --text: #3b342a;
-      --muted: #756b5d;
-      --line: #eadcc3;
-      --accent: #d9a441;
-      --accent-soft: #f4dfad;
-      --shadow: rgba(88, 67, 35, 0.12);
+      --bg: #f7f2e8;
+      --card: #fffdf8;
+      --text: #2f2a26;
+      --muted: #6b625a;
+      --line: #e8dfd2;
+      --accent: #f2b04c;
+      --accent-soft: #dbe4ee;
     }
 
     * {
       box-sizing: border-box;
     }
 
-    html {
-      background: var(--bg);
-      color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.65;
-    }
-
     body {
       margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), transparent 32rem),
-        radial-gradient(circle at bottom right, rgba(244, 223, 173, 0.38), transparent 30rem),
-        var(--bg);
-      padding: 40px 18px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 16px;
     }
 
-    main {
-      width: 100%;
+    .wrap {
       max-width: 860px;
       margin: 0 auto;
     }
 
     .card {
-      background: linear-gradient(180deg, var(--card), var(--card-soft));
+      background: var(--card);
       border: 1px solid var(--line);
       border-radius: 28px;
-      box-shadow: 0 24px 70px var(--shadow);
-      padding: clamp(28px, 5vw, 56px);
+      box-shadow: 0 10px 30px rgba(70, 55, 35, 0.06);
+      padding: 28px 22px;
     }
 
-    header {
+    .hero {
       text-align: center;
-      padding-bottom: 28px;
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
-    .duck-badge {
-      width: 84px;
-      height: 84px;
-      margin: 0 auto 18px;
-      display: grid;
-      place-items: center;
-      border-radius: 26px;
-      background: #fff4d6;
-      border: 1px solid #ead19b;
-      box-shadow: 0 12px 32px rgba(160, 117, 42, 0.12);
+    .viori {
+      width: 96px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 14px;
     }
 
     .studio {
-      margin: 0;
+      display: inline-block;
+      font-size: 13px;
       color: var(--muted);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
+      background: var(--accent-soft);
+      border-radius: 999px;
+      padding: 6px 12px;
+      margin-bottom: 12px;
     }
 
     h1 {
-      margin: 8px 0 10px;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.08;
-      letter-spacing: -0.04em;
+      font-size: 31px;
+      line-height: 1.2;
+      margin: 0 0 10px;
+      letter-spacing: -0.02em;
     }
 
     .intro {
-      max-width: 620px;
       margin: 0 auto;
+      max-width: 620px;
       color: var(--muted);
-      font-size: 1rem;
+      font-size: 15px;
     }
 
-    .updated {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: rgba(244, 223, 173, 0.45);
-      color: #6d5730;
-      font-size: 0.86rem;
-      font-weight: 650;
+    .meta {
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--muted);
     }
 
     section {
-      margin: 0 0 30px;
-    }
-
-    section:last-child {
-      margin-bottom: 0;
+      padding-top: 18px;
+      margin-top: 18px;
+      border-top: 1px solid var(--line);
     }
 
     h2 {
+      font-size: 20px;
       margin: 0 0 10px;
-      font-size: 1.16rem;
       line-height: 1.3;
-      letter-spacing: -0.01em;
     }
 
     p {
       margin: 0 0 12px;
+      font-size: 15px;
     }
 
     ul {
-      margin: 10px 0 0;
-      padding-left: 1.25rem;
+      margin: 0;
+      padding-left: 20px;
     }
 
     li {
-      margin: 6px 0;
+      margin-bottom: 8px;
+      font-size: 15px;
     }
 
     a {
-      color: #8a5f05;
-      font-weight: 650;
-      text-decoration-thickness: 0.08em;
-      text-underline-offset: 0.18em;
+      color: #7d5b1f;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(125, 91, 31, 0.25);
     }
 
-    .note {
-      background: rgba(255, 255, 255, 0.52);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 16px 18px;
+    a:hover {
+      border-bottom-color: rgba(125, 91, 31, 0.7);
     }
 
-    footer {
-      margin-top: 34px;
-      padding-top: 24px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.92rem;
+    .footer {
+      margin-top: 24px;
       text-align: center;
+      color: var(--muted);
+      font-size: 13px;
     }
 
-    @media (max-width: 560px) {
-      body {
-        padding: 18px 12px;
-      }
-
+    @media (min-width: 720px) {
       .card {
-        border-radius: 22px;
-        padding: 24px 18px;
-      }
-
-      .duck-badge {
-        width: 72px;
-        height: 72px;
-        border-radius: 22px;
+        padding: 40px 42px;
       }
     }
   </style>
 </head>
 <body>
-  <main>
-    <article class="card" aria-labelledby="privacy-title">
-      <header>
-        <div class="duck-badge" aria-hidden="true">
-          <svg width="58" height="58" viewBox="0 0 120 120" role="img" aria-label="Small duck icon" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="52" fill="#FFF9E9"/>
-            <path d="M37 63c0-21 15-37 35-37 14 0 25 8 29 21 2 6-3 12-9 12H75c-6 0-10 5-10 11v4c0 12-10 22-22 22H29c-6 0-10-6-7-11 4-7 10-12 15-22Z" fill="#F1C866"/>
-            <path d="M83 51c8-2 17 0 23 5 3 3 2 7-2 8l-20 5c-3 1-6-1-7-4l-1-4c-1-4 2-8 7-10Z" fill="#E98A3E"/>
-            <circle cx="75" cy="43" r="4.5" fill="#3B342A"/>
-            <path d="M38 72c7 6 17 8 27 5" fill="none" stroke="#B78322" stroke-width="5" stroke-linecap="round"/>
-            <path d="M48 31c-5-8-2-17 6-20 4 7 3 15-2 21" fill="#F1C866"/>
-          </svg>
-        </div>
-        <p class="studio">Viori Studio</p>
-        <h1 id="privacy-title">Swivori Privacy Policy</h1>
-        <p class="intro">Swivori is a lightweight creator tool that helps users turn scene ideas into image-generation prompts.</p>
-        <span class="updated">Last updated: May 27, 2026</span>
-      </header>
+  <div class="wrap">
+    <div class="card">
+      <div class="hero">
+        <img src="viori.png" alt="Viori mascot" class="viori" />
+        <div class="studio">Viori Studio</div>
+        <h1>Swivori Privacy Policy</h1>
+        <p class="intro">
+          Swivori is a lightweight creator tool that helps users build image-generation prompts.
+          This page explains how the app handles information.
+        </p>
+        <p class="meta">Effective date: May 27, 2026</p>
+      </div>
 
       <section>
-        <h2>1. Developer and contact</h2>
-        <p>Swivori is provided by <strong>Viori Studio</strong>.</p>
-        <p>For privacy-related questions, contact us at <a href="mailto:privacy@swivhome.com">privacy@swivhome.com</a>.</p>
+        <h2>1. Who we are</h2>
+        <p>
+          Swivori is provided by <strong>Viori Studio</strong>.
+          If you have any questions about this Privacy Policy, you can contact us at
+          <a href="mailto:privacy@swivhome.com">privacy@swivhome.com</a>.
+        </p>
       </section>
 
       <section>
         <h2>2. What Swivori does</h2>
-        <p>Swivori helps users create structured prompts for image-generation tools. Users can enter short scene descriptions and generate prompt text that can be copied and used in other image-generation services.</p>
+        <p>
+          Swivori helps users turn short scene descriptions into structured image prompts.
+          Users can write scene ideas, choose a style, and generate prompt text inside the app.
+        </p>
       </section>
 
       <section>
-        <h2>3. Prompt generation and local processing</h2>
-        <p>Swivori does not send the scene descriptions you enter or the prompts generated by the app to Viori Studio servers.</p>
-        <p>Prompt generation is handled on the device. Swivori does not operate its own server for storing, processing, or reviewing user prompt content.</p>
+        <h2>3. Prompt generation and user input</h2>
+        <p>
+          Swivori does <strong>not</strong> send the user’s scene descriptions or generated prompts
+          to our own servers.
+        </p>
+        <p>
+          Prompt generation is performed locally on the user’s device.
+        </p>
       </section>
 
       <section>
-        <h2>4. Local app data</h2>
-        <p>Swivori may store app preferences or locally saved prompt-related settings on your device, such as language settings, recent inputs, favorites, or similar convenience data if these features are available in the app.</p>
-        <p>This locally stored data is kept on your device and is not uploaded to Viori Studio servers.</p>
-        <p>You can remove local app data by using in-app deletion options where available, clearing the app data through your device settings, or uninstalling the app.</p>
+        <h2>4. Local storage</h2>
+        <p>
+          The app may store user-written scene descriptions, style selections, and generated prompts
+          locally on the device to support normal app usage, such as recent items or saved content.
+        </p>
+        <p>
+          This local data is not stored on a Viori Studio server.
+        </p>
       </section>
 
       <section>
-        <h2>5. Ads and third-party processing</h2>
-        <p>Swivori may use the Google Mobile Ads SDK to display ads.</p>
-        <p>When ads are shown, Google may process data such as advertising identifiers, IP address, device information, app interaction information, crash data, diagnostics, and other information needed to provide, measure, and improve advertising services.</p>
-        <p>Viori Studio does not control all data processing performed by Google through Google Mobile Ads. Please refer to Google’s own privacy and advertising information for details about how Google processes data.</p>
+        <h2>5. Advertising</h2>
+        <p>
+          Swivori may display ads using the <strong>Google Mobile Ads SDK</strong>.
+        </p>
+        <p>
+          In the course of providing ads, Google may process certain information such as:
+        </p>
+        <ul>
+          <li>Advertising ID</li>
+          <li>App set ID</li>
+          <li>IP address</li>
+          <li>Device and diagnostic information</li>
+          <li>App interaction information related to advertising</li>
+        </ul>
+        <p>
+          For more information about how Google handles data, please refer to Google’s own privacy documentation.
+        </p>
       </section>
 
       <section>
-        <h2>6. No account creation</h2>
-        <p>Swivori does not require users to create an account. Viori Studio does not provide a Swivori user account system for this app.</p>
+        <h2>6. Accounts and server-side user data</h2>
+        <p>
+          Swivori does not require account creation.
+        </p>
+        <p>
+          Because we do not operate user accounts or store user prompt data on our own server,
+          there is no server-side account data for us to delete upon request.
+        </p>
       </section>
 
       <section>
-        <h2>7. Server-stored user data</h2>
-        <p>Because Swivori does not upload user prompt content to Viori Studio servers and does not require account creation, there is no Swivori account data or server-stored prompt content for users to request deletion from Viori Studio.</p>
-        <p>This does not include data that may be processed independently by third-party services such as Google Mobile Ads.</p>
+        <h2>7. Children’s privacy</h2>
+        <p>
+          Swivori is not designed to knowingly collect personal information from children through
+          Viori Studio servers.
+        </p>
       </section>
 
       <section>
-        <h2>8. Children</h2>
-        <p>Swivori is not specifically directed to children. If future app settings or store listings specify a particular age group, this policy may be updated accordingly.</p>
+        <h2>8. Changes to this Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time.
+          If we make changes, we will update the effective date on this page.
+        </p>
       </section>
 
       <section>
-        <h2>9. Changes to this policy</h2>
-        <p>We may update this Privacy Policy if Swivori’s features, data handling, advertising behavior, or legal requirements change. Updates will be posted on this page with a revised “Last updated” date.</p>
+        <h2>9. Contact</h2>
+        <p>
+          Viori Studio<br />
+          Contact: <a href="mailto:privacy@swivhome.com">privacy@swivhome.com</a>
+        </p>
       </section>
 
-      <section class="note">
-        <h2>10. Contact</h2>
-        <p>For privacy questions or requests, contact:</p>
-        <p><strong>Viori Studio</strong><br />
-        <a href="mailto:privacy@swivhome.com">privacy@swivhome.com</a></p>
-      </section>
-
-      <footer>
-        <p>© 2026 Viori Studio. Swivori Privacy Policy.</p>
-      </footer>
-    </article>
-  </main>
+      <div class="footer">
+        © Viori Studio
+      </div>
+    </div>
+  </div>
 </body>
 </html>
