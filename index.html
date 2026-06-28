@@ -81,9 +81,15 @@
       border: 1px solid var(--line);
       display: grid;
       place-items: center;
-      color: var(--accent);
-      font-size: 22px;
-      font-weight: 800;
+      overflow: hidden;
+      padding: 4px;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     h1 {
@@ -193,7 +199,9 @@
     <div class="card">
       <header>
         <div class="brand" aria-label="Viori Studio">
-          <div class="brand-mark" aria-hidden="true">V</div>
+          <div class="brand-mark" aria-hidden="true">
+            <img src="viori.png" alt="" />
+          </div>
           <div>Viori Studio</div>
         </div>
 
